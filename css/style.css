@@ -1,0 +1,416 @@
+body {
+  overflow-x: hidden;
+}
+
+/* ------------------------- */
+/* navbar interaktif */
+/* ------------------------- */
+nav.sticky {
+  padding: 5px 100px;
+  background: #000074c0;
+  box-shadow: 0 2px 8px 0 rgba(1, 1, 1, 0.2);
+}
+
+/* ------------------------- */
+/* Navbar */
+/* ------------------------- */
+.navbar-mobile {
+  display: flex;
+  background-color: transparent;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+  color: black;
+  font-weight: 500;
+}
+
+.navigasi {
+  display: flex;
+  list-style: none;
+  background-color: white;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.navigasi li a {
+  color: black;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.navigasi li a:hover {
+  font-weight: 700;
+  color: rgb(255, 196, 0);
+}
+
+/* ------------------------- */
+/* Navbar */
+/* ------------------------- */
+.navbar-brand {
+  font-family: 'Viga', Courier, sans-serif;
+  font-size: 32px;
+}
+
+.logo {
+  visibility: hidden;
+}
+
+.nav-link {
+  color: white;
+}
+
+/* ------------------------- */
+/* Hamburger menu */
+/* ------------------------- */
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+/* ------------------------- */
+/* Hamburger menu animation */
+/* ------------------------- */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* ------------------------- */
+/* Semua */
+/* ------------------------- */
+.tombol {
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+
+/* ------------------------- */
+/* Jumbotron */
+/* ------------------------- */
+.jumbotron {
+  padding: 2 rem 1 rem;
+  font-family: helvetica, courier, arial;
+  background-size: cover;
+  height: 640px;
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron .display-4 {
+  color: white;
+  margin-top: 150px;
+  font-size: 40px;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron .display-4 span {
+  font-weight: 500;
+  color: rgb(255, 196, 0);
+}
+
+#pola {
+  position: relative;
+  width: 100%;
+}
+
+.jumbotron .banner {
+  margin-top: 250px;
+}
+
+/* ------------------------- */
+/* Contact Us */
+/* ------------------------- */
+.contact_us {
+  max-width: 800px;
+  margin: 50px auto;
+  position: relative;
+  box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+.contact_us .title {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 3em;
+  line-height: 48px;
+  padding-bottom: 20px;
+  color: #000080;
+  background: linear-gradient(to right, #f4524d 0%, #000080 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-form .form-field {
+  position: relative;
+  margin: 32px 0;
+}
+
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #5543ca;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.contact-form .input-text:focus {
+  outline: none;
+}
+
+.contact-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #5543ca;
+  cursor: text;
+  text-transform: capitalize;
+  transition: transform 0.2s ease-in-out;
+}
+
+.contact-form .submit-btn {
+  display: inline-block;
+  background-image: linear-gradient(125deg, #a72879, #064497);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  width: 200px;
+  cursor: pointer;
+}
+
+/* ------------------------- */
+/* ABOUT US */
+/* ------------------------- */
+.about {
+  width: 100x;
+  padding: 78px 0px;
+  background-color: #191919;
+  height: auto;
+  display: flex;
+}
+.about img {
+  height: auto;
+  width: 420px;
+}
+.about-text {
+  width: 550px;
+}
+.mainn {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-text h1 {
+  color: white;
+  font-size: 60px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.about-text h3 {
+  color: white;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+.about span {
+  color: rgb(255, 196, 0);
+}
+.about-text p {
+  color: #fcfc;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  padding: auto;
+  margin-bottom: 100px;
+  text-align: justify;
+}
+
+/* ------------------------- */
+/* HTML*/
+/* ------------------------- */
+.hero-container {
+  height: 250px;
+  background-color: #ffe4b5;
+  padding: 100px 30px;
+  display: flex;
+}
+.hero-container img {
+  height: 110px;
+  width: auto;
+}
+.course {
+  background: #f8f8ff;
+}
+
+.course .banner {
+  margin: 0 100px -9px 100px;
+  padding: 25px 0 25px;
+}
+
+/* ------------------------- */
+/* DEKSTOP VERSION */
+/* ------------------------- */
+@media (min-width: 992px) {
+  .navbar-mobile {
+    display: none;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .navbar-brand,
+  .nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    margin-right: 25px;
+  }
+  .nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #f4524d;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .jumbotron {
+    margin-top: -75px;
+    height: 620px;
+  }
+  .jumbotron .display-4 {
+    font-size: 62;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+/* ------------------------- */
+/* TABLET VERSION */
+/* ------------------------- */
+@media screen and (max-width: 768px) {
+  #pola {
+    display: none;
+  }
+  .navbarku {
+    display: none;
+  }
+  .navigasi {
+    width: 50%;
+  }
+}
+/* ------------------------- */
+/* MOBILE VERSION */
+/* ------------------------- */
+@media screen and (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navigasi {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 55%;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    z-index: -1;
+    background-color: #000080da;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+
+  .navigasi.slide {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .navbar-dekstop {
+    display: none;
+  }
+  #pola {
+    display: none;
+  }
+  .navbarku {
+    display: none;
+  }
+
+  .about-text p {
+    width: 400px;
+    margin-bottom: 200px;
+  }
+  .about .img {
+    margin-top: 150px;
+  }
+  .dekstop {
+    display: none;
+  }
+}
